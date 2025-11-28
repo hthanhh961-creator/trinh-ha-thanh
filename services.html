@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ - Serenity Spa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Serenity Spa</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="services.html" class="active">Dịch vụ</a></li>
+                <li><a href="reviews.html">Đánh giá</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="services-hero-content">
+            <h1>Dịch Vụ Spa Cao Cấp</h1>
+            <p>Khám phá các liệu pháp chăm sóc toàn diện được thiết kế riêng cho bạn. Từ massage thư giãn đến chăm sóc da chuyên sâu, chúng tôi mang đến trải nghiệm hoàn hảo.</p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+        <div class="category-buttons">
+            <button class="category-btn active" data-category="all">Tất cả</button>
+            <button class="category-btn" data-category="massage">Massage</button>
+            <button class="category-btn" data-category="facial">Facial</button>
+            <button class="category-btn" data-category="body">Body Treatment</button>
+            <button class="category-btn" data-category="combo">Combo</button>
+        </div>
+    </section>
+
+    <!-- Services List -->
+    <section class="services-list">
+        <div class="services-container">
+            
+            <!-- Service 1: Massage Body -->
+            <div class="service-item" data-category="massage">
+                <div class="service-content-wrapper">
+                    <div class="service-image">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-header">
+                            <div>
+                                <h3 class="service-title">Massage Body Thư Giãn</h3>
+                                <p class="service-subtitle">Thư giãn toàn thân, giải tỏa căng thẳng</p>
+                            </div>
+                            <div class="service-price">
+                                <div class="price-tag">450K</div>
+                                <div class="price-duration">60 phút</div>
+                            </div>
+                        </div>
+                        
+                        <p class="service-description">
+                            Liệu pháp massage toàn thân với kỹ thuật Thụy Điển kết hợp tinh dầu thảo mộc thiên nhiên. Giúp thư giãn cơ bắp, cải thiện tuần hoàn máu và mang lại cảm giác nhẹ nhàng, thư thái sau một ngày làm việc căng thẳng.
+                        </p>
+
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Thời gian</span>
+                                    <span class="feature-value">60 / 90 phút</span>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Mức thư giãn</span>
+                                    <div class="relaxation-level">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-actions">
+                            <button class="btn-book-service" onclick="openModal('massage-body')">Chọn dịch vụ</button>
+                            <button class="btn-details" onclick="openModal('massage-body')">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Facial Treatment -->
+            <div class="service-item" data-category="facial">
+                <div class="service-content-wrapper">
+                    <div class="service-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-header">
+                            <div>
+                                <h3 class="service-title">Facial Treatment Premium</h3>
+                                <p class="service-subtitle">Chăm sóc da mặt chuyên sâu</p>
+                            </div>
+                            <div class="service-price">
+                                <div class="price-tag">550K</div>
+                                <div class="price-duration">75 phút</div>
+                            </div>
+                        </div>
+                        
+                        <p class="service-description">
+                            Liệu trình chăm sóc da mặt cao cấp với công nghệ hiện đại kết hợp dưỡng chất thiên nhiên. Làm sạch sâu, massage kích thích tuần hoàn, đắp mặt nạ dưỡng ẩm giúp da trắng sáng, mịn màng và tràn đầy sức sống.
+                        </p>
+
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Thời gian</span>
+                                    <span class="feature-value">75 / 90 phút</span>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Mức thư giãn</span>
+                                    <div class="relaxation-level">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-actions">
+                            <button class="btn-book-service" onclick="openModal('facial-treatment')">Chọn dịch vụ</button>
+                            <button class="btn-details" onclick="openModal('facial-treatment')">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Stone Therapy -->
+            <div class="service-item" data-category="massage">
+                <div class="service-content-wrapper">
+                    <div class="service-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-header">
+                            <div>
+                                <h3 class="service-title">Stone Therapy - Đá Nóng</h3>
+                                <p class="service-subtitle">Liệu pháp đá nóng cổ truyền</p>
+                            </div>
+                            <div class="service-price">
+                                <div class="price-tag">650K</div>
+                                <div class="price-duration">90 phút</div>
+                            </div>
+                        </div>
+                        
+                        <p class="service-description">
+                            Liệu pháp trị liệu bằng đá nóng basalt kết hợp massage chuyên sâu và tinh dầu thảo mộc. Nhiệt độ ấm áp từ đá nóng giúp giãn cơ, thúc đẩy tuần hoàn máu, xóa tan mọi căng thẳng và mệt mỏi.
+                        </p>
+
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Thời gian</span>
+                                    <span class="feature-value">90 phút</span>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Mức thư giãn</span>
+                                    <div class="relaxation-level">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-actions">
+                            <button class="btn-book-service" onclick="openModal('stone-therapy')">Chọn dịch vụ</button>
+                            <button class="btn-details" onclick="openModal('stone-therapy')">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Body Scrub -->
+            <div class="service-item" data-category="body">
+                <div class="service-content-wrapper">
+                    <div class="service-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-header">
+                            <div>
+                                <h3 class="service-title">Body Scrub & Wrap</h3>
+                                <p class="service-subtitle">Tẩy tế bào chết toàn thân</p>
+                            </div>
+                            <div class="service-price">
+                                <div class="price-tag">500K</div>
+                                <div class="price-duration">60 phút</div>
+                            </div>
+                        </div>
+                        
+                        <p class="service-description">
+                            Tẩy da chết toàn thân bằng muối biển thiên nhiên kết hợp tinh dầu, loại bỏ tế bào chết, làm sạch lỗ chân lông. Sau đó dưỡng ẩm với bùn khoáng giúp da mềm mại, trắng sáng tự nhiên.
+                        </p>
+
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Thời gian</span>
+                                    <span class="feature-value">60 phút</span>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Mức thư giãn</span>
+                                    <div class="relaxation-level">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-actions">
+                            <button class="btn-book-service" onclick="openModal('body-scrub')">Chọn dịch vụ</button>
+                            <button class="btn-details" onclick="openModal('body-scrub')">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5: Aromatherapy -->
+            <div class="service-item" data-category="massage">
+                <div class="service-content-wrapper">
+                    <div class="service-image">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-header">
+                            <div>
+                                <h3 class="service-title">Aromatherapy Massage</h3>
+                                <p class="service-subtitle">Massage thư giãn với tinh dầu</p>
+                            </div>
+                            <div class="service-price">
+                                <div class="price-tag">520K</div>
+                                <div class="price-duration">75 phút</div>
+                            </div>
+                        </div>
+                        
+                        <p class="service-description">
+                            Liệu pháp hương thơm kết hợp massage nhẹ nhàng với tinh dầu thiên nhiên cao cấp. Giúp cân bằng cảm xúc, giảm stress, cải thiện giấc ngủ và mang lại trạng thái thư thái tuyệt đối.
+                        </p>
+
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Thời gian</span>
+                                    <span class="feature-value">75 phút</span>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <span class="feature-label">Mức thư giãn</span>
+                                    <div class="relaxation-level">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-actions">
+                            <button class="btn-book-service" onclick="openModal('aromatherapy')">Chọn dịch vụ</button>
+                            <button class="btn-details" onclick="openModal('aromatherapy')">Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6: Combo Special -->
+            <div class="service-item" data-category="combo">
+                <div class="service-content-wrapper">
+                    <div class="service-image">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-header">
+                            <div>
+                                <h3 class="service-title">Combo VIP - Relax & Rejuvenate</h3>
+                                <p class="service-subtitle">Gói trọn gói cao cấp nhất</p>
+                            </div>
+                            <div class="service-price">
+                                <div class="price-tag">1.200K</div>
+                                <div class="price-duration">180 phút</div>
+                            </div>
+                        </div>
+                        
+                        <p class="service-description">
+                            Gói dịch vụ trọn gói bao gồm: Body Scrub + Stone Therapy + Facial Treatment + Foot Massage. Trải nghiệm spa hoàn hảo 3 tiếng với đội ngũ chuyên viên hàng đầu, giúp bạn tái tạo năng lượng toàn diện.
+                        </p>
+
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Spa - Relax. Refresh. Rejuvenate.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Serenity Spa</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="services.html">Dịch vụ</a></li>
+                <li><a href="reviews.html">Đánh giá</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Relax. Refresh. Rejuvenate.</h1>
+            <p>Trải nghiệm không gian thư giãn sang trọng với các liệu pháp chăm sóc toàn diện</p>
+            <a href="#booking" class="btn">Đặt lịch ngay</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2 class="section-title">Dịch vụ nổi bật</h2>
+        <p class="section-subtitle">Khám phá các liệu pháp được yêu thích nhất</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <h3>Massage Body</h3>
+                <p>Thư giãn toàn thân với kỹ thuật massage chuyên sâu, giúp giảm căng thẳng và tái tạo năng lượng cho cơ thể.</p>
+                <a href="services.html" class="btn-secondary">Xem chi tiết</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Facial Treatment</h3>
+                <p>Chăm sóc da mặt chuyên nghiệp với các sản phẩm thiên nhiên cao cấp, mang lại làn da tươi trẻ rạng ngời.</p>
+                <a href="services.html" class="btn-secondary">Xem chi tiết</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3>Stone Therapy</h3>
+                <p>Liệu pháp đá nóng kết hợp tinh dầu thảo mộc, kích thích tuần hoàn máu và xóa tan mọi căng thẳng.</p>
+                <a href="services.html" class="btn-secondary">Xem chi tiết</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours">
+        <h2 class="section-title">Giờ mở cửa</h2>
+        <p class="section-subtitle">Chúng tôi luôn sẵn sàng phục vụ bạn</p>
+        <div class="hours-container">
+            <div class="hours-grid">
+                <div class="hours-row">
+                    <span>Thứ Hai - Thứ Sáu</span>
+                    <span>9:00 AM - 9:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span>Thứ Bảy - Chủ Nhật</span>
+                    <span>8:00 AM - 10:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span>Ngày Lễ</span>
+                    <span>10:00 AM - 8:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <h2 class="section-title">Đặt lịch nhanh</h2>
+        <p class="section-subtitle">Điền thông tin để nhận tư vấn và đặt lịch</p>
+        <div class="booking-container">
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Họ và tên *</label>
+                    <input type="text" id="name" required placeholder="Nhập họ tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại *</label>
+                    <input type="tel" id="phone" required placeholder="0912 345 678">
+                </div>
+                <div class="form-group">
+                    <label for="service">Chọn dịch vụ *</label>
+                    <select id="service" required>
+                        <option value="">-- Chọn dịch vụ --</option>
+                        <option value="massage">Massage Body</option>
+                        <option value="facial">Facial Treatment</option>
+                        <option value="stone">Stone Therapy</option>
+                        <option value="combo">Combo đặc biệt</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Ngày *</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Giờ *</label>
+                        <input type="time" id="time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="staff">Chọn nhân viên (tùy chọn)</label>
+                    <select id="staff">
+                        <option value="">-- Nhân viên bất kỳ --</option>
+                        <option value="anna">Anna Nguyễn</option>
+                        <option value="linh">Linh Phạm</option>
+                        <option value="mai">Mai Trần</option>
+                        <option value="hoa">Hoa Lê</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Đặt lịch ngay</button>
+                <div class="success-message" id="successMessage">
+                    ✓ Đặt lịch thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Serenity Spa</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>📍 123 Trần Hưng Đạo, Quận 1, TP.HCM</p>
+            <p>📞 (+84) 912 345 678 | ✉️ contact@serenityspa.vn</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">© 2025 Serenity Spa. All rights reserved.</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>  
